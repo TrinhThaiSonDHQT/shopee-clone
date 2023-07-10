@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="header_top_left">
+                <span class="header_top_left-title">this is a Shoppe project clone</span>
+                <span style="margin-right: 5px;">Ket noi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-facebook " viewBox="0 0 16 16" style="margin-right: 5px;">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                    class="bi bi-instagram " viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+            </div>
+
+            <div class="header_top_right">
+                <div class="notification">
+                    <div class="notification_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                        <span style="position: relative;">Thong bao</span>
+                    </div>
+                    <div class="notification-list">
+                        <p class="notification-list_title">Thong bao moi nhan</p>
+                        <div class="notification-list_items first-items">
+                            <div class="list_items-name">My pham uhoi chinh hang</div>
+                            <div class="list_items-description">My pham uhoi chinh hang description</div>
+                        </div>
+                        <div class="notification-list_items">
+                            <div class="list_items-name">Xac thuc nguon goc chinh hang cac san pham</div>
+                            <div class="list_items-description">Xac thuc nguon goc chinh hang cac san pham description
+                            </div>
+                        </div>
+                        <div class="notification-list_items">
+                            <div class="list_items-name">Xac thuc nguon goc chinh hang cac san pham</div>
+                            <div class="list_items-description">ban co mot don hang chua duoc thanh toan description
+                            </div>
+                        </div>
+                        <div class="notification-list_items">
+                            <div class="list_items-name">Sale shock bo duong uhoi tai tao tre hoa da </div>
+                            <div class="list_items-description">Sale shock bo duong uhoi tai tao tre hoa da description
+                            </div>
+                        </div>
+                        <div class="btn-all-notifications">
+                            <button>Xem tat ca</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support">
+                    <div class="support_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-question-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                        </svg>
+                        <span>Tro giup</span>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                    <span>Thai Son</span>
+
+                    <div class="profile_options">
+                        <a href="#">Tai khoan cua toi</a>
+                        <a href="#">Dia chi cua toi</a>
+                        <a href="#" style="border-bottom: 1px solid rgb(222, 222, 222);">Don mua</a>
+                        <form action="logout" method="post">
+                            <button type="submit">Dang xuat</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_body">
+            <div class="header_body-logo">
+                <a href="#"><img src="img/logo_Shopee_3.png" alt="logo"></a>
+            </div>
+            <div class="header_body-search">
+                <input type="text" placeholder="Tim Kiem San Pham">
+                <div class="inner-input">
+                    <div class="type">
+                        <span>Trong shop</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16" style="color: gray;">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <div class="type-list">
+                            <p>Trong nuoc<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    fill="currentColor" class="bi bi-check" viewBox="0 0 16 16"
+                                    style="margin-left: 9px; color: #fe5722;">
+                                    <path
+                                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                </svg></p>
+                            <p>Ngoai nuoc</p>
+                        </div>
+                    </div>
+                    <div class="icon-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="header_body-cart">
+                <div class="cart_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <span class="cart_container-quantity">3</span>
+
+                    <div class="cart_list">
+                        <div class="cart_list-title">San pham da them</div>
+
+                        <div class="cart_list-container">
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span class="product-total-quantity">x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span>x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span>x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span>x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span>x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="cart_list-items">
+                                <div class="product-img"><img src="./img/product_hadalabo.jpg" alt=" "></div>
+                                <div class="product-infor">
+                                    <p class="product-name">Combo sua rua mat Hada Labo + giay tham dau va bong tay
+                                        trang sieu re</p>
+                                    <p class="product-type">Phan loai: <span>Bac</span></p>
+                                </div>
+                                <div class="product-total">
+                                    <span class="product-total-price">2.000.000 đ</span>
+                                    <span>x</span>
+                                    <span class="product-total-quantity">2</span>
+                                    <form action="" method="post">
+                                        <button type="submit">Xoa</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart_list-view-cart">
+                            <a href="#">Xem gio hang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar-reponsive">
+        <div class="nav-bar-container">
+            <a href="#" class="nav-bar-link" id="selected-link">Lien Quan</a>
+            <a href="#" class="nav-bar-link">Moi Nhat</a>
+            <a href="#" class="nav-bar-link">Ban Chay</a>
+            <a href="#" class="nav-bar-link">Gia</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="main_container">
+            <div class="row">
+                <div class="col-2 catalog">
+                    <p class="catalog_title">Danh Muc</p>
+                    <a href="#" class="catalog_link default-selected">Thuc Pham</a>
+                    <a href="#" class="catalog_link">Ao Quan</a>
+                    <a href="#" class="catalog_link">Trang Suc</a>
+                    <a href="#" class="catalog_link">Dien Thoai</a>
+                </div>
+
+                <div class="col-11 col-md-10 right-side">
+                    <div class="right-side__header">
+                        <span class="right-side__header-lable">Sap xep theo</span>
+                        <div class="right-side__header-content">
+                            <div class="right-side__header-options">
+                                <div class="right-side__header-sort-by-popular">Pho bien</div>
+                                <div class="right-side__header-sort-by-date">Moi nhat</div>
+                                <div class="right-side__header-sort-by-sales">Ban chay</div>
+                                <div class="right-side__header-sort-by-price">
+                                    <div class="right-side__header-sort-by-price__lable">Gia</div>
+                                    <div class="right-side__header-sort-by-price__icon"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"
+                                            style="color: gray;">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg></div>
+                                    <div class="right-side__header-sort-by-price__options">
+                                        <div class="sort-by-price__options-order-asc">Gia: Thap den Cao</div>
+                                        <div class="sort-by-price__options-order-des">Gia: Cao den Thap</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-side__header-mini-page">
+                                <span class="right-side__header-mini-page-curent">1</span>/<span
+                                    class="right-side__header-mini-page-amount">14</span>
+                                <span class="right-side__header-mini-page-previous"><b>
+                                        <</b> </span> <span class="right-side__header-mini-page-next"><b>></b></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side__body">
+                        <div class="row m-0">
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                                <span>Yeu thich</span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem dac
+                                                tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>    
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem dac tri
+                                                vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                        <div class="right-side__body-item position-relative">
+                                            <div class="right-side__body-item-tag w-100">
+                                                <div class="item-tag-hight-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                            </path>
+                                                        </svg>
+                                                        <span>Yeu thich</span>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-tag-discount">
+                                                    <span class="item-tag-discount-number">45%</span><br>
+                                                    <span>GIAM</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="right-side__body-item-content">
+                                                <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink
+                                                    Bo kem dac tri vung
+                                                    mat</p>
+                                                <div class="item-content-price d-flex justify-content-between">
+                                                    <span
+                                                        class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                    <span class="item-content-price-to-buy">2.070.000d</span>
+                                                </div>
+                                                <div
+                                                    class="item-content-sales d-flex justify-content-end align-items-center">
+                                                    <div class="item-content-sales-rate">
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" style="color: rgb(255,206,62);"
+                                                                fill="currentColor" class="bi bi-star-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" style="color: rgb(255,206,62);"
+                                                                fill="currentColor" class="bi bi-star-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" style="color: rgb(255,206,62);"
+                                                                fill="currentColor" class="bi bi-star-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" style="color: rgb(255,206,62);"
+                                                                fill="currentColor" class="bi bi-star-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                        </span>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" style="color: rgb(205, 205, 205);"
+                                                                fill="currentColor" class="bi bi-star-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="item-content-sales-amount ms-2">
+                                                        2.300 Da ban
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="item-content-shop d-flex justify-content-between align-items-center">
+                                                    <div class="item-content-shop-name">Thai Son</div>
+                                                    <div class="item-content-shop-address">Da Nang</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem dac tri vung
+                                                mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col g-2 ">
+                                <a>
+                                    <div class="right-side__body-item position-relative">
+
+                                        <div class="right-side__body-item-tag w-100">
+                                            <div class="item-tag-hight-rate">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                        fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z">
+                                                        </path>
+                                                    </svg>
+                                                    <span>Yeu thich</span>
+                                                </span>
+                                            </div>
+
+                                            <div class="item-tag-discount">
+                                                <span class="item-tag-discount-number">45%</span><br>
+                                                <span>GIAM</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="right-side__body-item-content">
+                                            <p class="item-content-name">Bo kem dac tri vung mat Age recovery Wrink Bo
+                                                kem
+                                                dac tri vung mat</p>
+                                            <div class="item-content-price d-flex justify-content-between">
+                                                <span
+                                                    class="item-content-price-original text-decoration-line-through">2.300.000d</span>
+                                                <span class="item-content-price-to-buy">2.070.000d</span>
+                                            </div>
+                                            <div
+                                                class="item-content-sales d-flex justify-content-end align-items-center">
+                                                <div class="item-content-sales-rate">
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(255,206,62);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            style="color: rgb(205, 205, 205);" fill="currentColor"
+                                                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                        </svg>
+                                                    </span>
+                                                </div>
+
+                                                <div class="item-content-sales-amount ms-2">
+                                                    2.300 Da ban
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="item-content-shop d-flex justify-content-between align-items-center">
+                                                <div class="item-content-shop-name">Thai Son</div>
+                                                <div class="item-content-shop-address">Da Nang</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
